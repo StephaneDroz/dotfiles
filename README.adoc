@@ -4,7 +4,7 @@
 
 Install scripts
 ----
-cp -r bin .alias ~/.
+cp -r bin .alias .oh-my-zsh ~/.
 ----
 
 Add in `~/.profile` `export PATH="~/bin/:$PATH"
@@ -40,12 +40,14 @@ edit  `~/.zshrc` and replace `plugins` value by `(zsh-autosuggestions)`
 plugins=(zsh-autosuggestions)
 ----
 
-Add in `~/.zshrc` `. ~/.alias`
-
 TIP:
 
-`CTRL + U`:: delete from the cursor to the start of the line
-`CTRL + K`:: delete from the cursor to the end of the line
-`CTRL + W`:: delete from the cursor to the start of the preceding word
-`ALT + D`:: delete from the cursor to the end of the next word
-`CTRL + L`:: clear the terminal
+kbd:[Ctrl+u] delete from the cursor to the start of the line
+
+kbd:[Ctrl+k] delete from the cursor to the end of the line
+
+kbd:[Ctrl+w] delete from the cursor to the start of the preceding word
+
+kdb:[Ctrl+d] delete from the cursor to the end of the next word
+
+kbd:[Ctrl+l] clear the terminal

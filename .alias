@@ -2,9 +2,18 @@
 
 alias c='cat'
 alias v='nvim'
+ialias vi='nvim'
 alias uz='unzip'
 alias k9='kill -9'
 alias k15='kill -15'
+alias fn='find . -name "*'
+alias zs='source ~/.zshrc'
+
+# executables
+alias cs='create-script'
+alias acd='asciidoctor'
+alias ti='timer'
+alias curl='curl --silent --show-error'
 
 
 # maven
@@ -13,11 +22,18 @@ alias mci='mvn clean install'
 # network
 alias port='netstat -tulnap'
 
+#docker
+alias dk='docker'
+alias dkp='docker ps'
+alias dkpa='docker ps -a'
+alias dki='docker images'
+alias dkin='docker inspect'
+
 # suffix
 alias -s {pdf,PDF}='background mupdf'
 alias -s {jpg,JPG,png,PNG}='background gpicview'
 alias -s {ods,ODS,odt,ODT,odp,ODP,doc,DOC,docx,DOCX,xls,XLS,xlsx,XLSX,xlsm,XLSM,ppt,PPT,pptx,PPTX,csv,CSV}='background libreoffice'
-alias -s {html,HTML}='background chromium'
+alias -s {html,HTML}='background firefox'
 alias -s {mp4,MP4,mov,MOV,mkv,MKV}='background vlc'
 alias -s {zip,ZIP,war,WAR}="unzip -l"
 alias -s {jar,JAR}="java -jar"

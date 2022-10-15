@@ -1,0 +1,19 @@
+= How to re-install firefox without snap
+
+sudo snap remove firefox
+rm -rf ~/snap/firefox
+
+.file `/etc/apt/preferences.d/firefox-no-snap`
+----
+Package: firefox*
+Pin: release o=Ubuntu*
+Pin-Priority: -1
+----
+
+sudo apt purge firefox
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt update
+sudo apt install firefox
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+
+reboot
