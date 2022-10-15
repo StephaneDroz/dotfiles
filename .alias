@@ -9,3 +9,17 @@ alias k15='kill -15'
 
 # maven
 alias mci='mvn clean install'
+
+# network
+alias port='netstat -tulnap'
+
+# suffix
+alias -s {pdf,PDF}='background mupdf'
+alias -s {jpg,JPG,png,PNG}='background gpicview'
+alias -s {ods,ODS,odt,ODT,odp,ODP,doc,DOC,docx,DOCX,xls,XLS,xlsx,XLSX,xlsm,XLSM,ppt,PPT,pptx,PPTX,csv,CSV}='background libreoffice'
+alias -s {html,HTML}='background chromium'
+alias -s {mp4,MP4,mov,MOV,mkv,MKV}='background vlc'
+alias -s {zip,ZIP,war,WAR}="unzip -l"
+alias -s {jar,JAR}="java -jar"
+alias -s gz="tar -tf"
+alias -s {tgz,TGZ}="tar -tf"
