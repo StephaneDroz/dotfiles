@@ -1,0 +1,51 @@
+= dotfiles
+
+== Installation
+
+Install scripts
+----
+cp -r bin .alias ~/.
+----
+
+Add in `~/.profile` `export PATH="~/bin/:$PATH"
+
+Install zsh
+----
+sudo apt install zsh
+chsh -s /usr/bin/zsh
+----
+
+restart session
+
+Install oh-my-zsh!
+----
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+----
+
+Configure the theme
+
+edit `~/.zshrc` and change the value of `ZSH_THEME` to `agnoster`
+----
+ZSH_THEME="agnoster"
+----
+
+install autosuggestions plugin
+----
+cd $ZSH_CUSTOM/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+----
+
+edit  `~/.zshrc` and replace `plugins` value by `(zsh-autosuggestions)`
+----
+plugins=(zsh-autosuggestions)
+----
+
+Add in `~/.zshrc` `. ~/.alias`
+
+TIP:
+
+`CTRL + U`:: delete from the cursor to the start of the line
+`CTRL + K`:: delete from the cursor to the end of the line
+`CTRL + W`:: delete from the cursor to the start of the preceding word
+`ALT + D`:: delete from the cursor to the end of the next word
+`CTRL + L`:: clear the terminal
