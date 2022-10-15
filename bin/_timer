@@ -1,0 +1,8 @@
+#!/bin/bash
+set -eu
+
+mins=$1
+message=$2
+#sleep $(($mins * 60))
+sleep $(($mins))
+notify-send -t 0 "${message}" "Your time of $mins min is over" -u normal

@@ -1,0 +1,11 @@
+# unix
+
+alias c='cat'
+alias v='nvim'
+alias uz='unzip'
+alias k9='kill -9'
+alias k15='kill -15'
+
+
+# maven
+alias mci='mvn clean install'

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ "$1" ] && [ "$2" ]; then
+  while true; do
+    inotifywait -r $1
+    $2
+  done
+else
+  echo "Usage: ${0##*/} <file> <command>"
+fi
